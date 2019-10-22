@@ -19,15 +19,22 @@ class Homepage extends Component {
             gutterWidth={20}
             gutterHeight={20}
           >
-            <div key="key2" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh'}}>Item 2</div>
-            <div key="key3" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'30vh'}}>Item 3</div>
-            <div key="key4" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh'}}>Item 4</div>
-            <div key="key5" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'30vh'}}>Item 5</div>
-            <div key="key6" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'30vh'}}>Item 6</div>
-            <div key="key7" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh'}}>Item 7</div>
-            <div key="key8" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'30vh'}}>Item 8</div>
-            <div key="key9" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh'}}>Item 9</div>
-            <div key="key10" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh'}}>Item 10</div>
+            <div className="CourseContainer" key="key2" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>
+                <div className="d-flex justify-content-center" style={{width:'100%'}}>
+                  <h1>SPM</h1>
+                </div>
+                <div className="Subjects d-flex pl-3">
+                  Add Maths
+                </div>
+            </div>
+            <div className="CourseContainer" key="key3" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'30vh', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>Item 3</div>
+            <div className="CourseContainer" key="key4" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>Item 4</div>
+            <div className="CourseContainer" key="key5" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'30vh', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>Item 5</div>
+            <div className="CourseContainer" key="key6" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'30vh', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>Item 6</div>
+            <div className="CourseContainer" key="key7" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>Item 7</div>
+            <div className="CourseContainer" key="key8" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'30vh', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>Item 8</div>
+            <div className="CourseContainer" key="key9" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>Item 9</div>
+            <div className="CourseContainer" key="key10" style={{backgroundColor:'#e7e6f5', width:'20vw', height:'20vh', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>Item 10</div>
           </StackGrid>
         </div>
       </>
