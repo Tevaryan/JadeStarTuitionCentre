@@ -20,3 +20,129 @@
 .App-link {
   color: #09d3ac;
 }
+
+.NavOptions {
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Nav-text {
+  color: #727178;
+}
+
+.Nav-text:hover {
+  color: black;
+}
+
+.NavBarSmall {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 50px;
+}
+
+.NavBarLarge {
+  display: none !important;
+}
+
+.BackgroundImage {
+  display: none !important;
+}
+
+.TextContainer2 {
+  display: block !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .NavBarLarge {
+    display: flex !important;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-between;
+  }
+  .NavBarSmall {
+    display: none !important;
+  }
+  .NavBarContainer {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .BackgroundImage {
+    display: block !important;
+  }
+
+  .TextContainer2 {
+    display: none !important;
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+/* exit */
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-exit-done {
+  opacity: 0;
+}
+
+.card-container {
+  width: 80vw;
+  height: 40vh;
+}
+
+.GalleryImage {
+  cursor: pointer;
+}
+
+.GalleryImage:hover {
+  opacity: 0.7;
+}
+
+.Navbar {
+  z-index: 9999 !important;
+}
