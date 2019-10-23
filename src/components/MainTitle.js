@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
+import mascot from "../assets/new.png"
 import '../App.css'
 
 export default class Navbar extends Component {
@@ -18,8 +19,8 @@ export default class Navbar extends Component {
             </div>
           </div>
           <div className="d-flex justify-content-center align-items-center p-5" style={{height:'100%',width:'50%'}}>
-            <div className="my-auto"style={{height:'100%',width:'100%', backgroundColor:'#d4d3e0'}} >
-              Right
+            <div className="my-auto"style={{height:'100%',width:'100%'}} >
+              <img src={mascot} style={{height:"100%", width:"100%", objectFit:"contain"}} alt="fireSpot"/>
             </div>
           </div>
         </div>
