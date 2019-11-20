@@ -22,7 +22,7 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <div style={{backgroundColor:'#EDEEF0', top:'0', width:'100vw'}}>
+      <div style={{backgroundColor:'#d5d3eb', top:'0', width:'100vw'}}>
         <div className="NavBarContainer">
 
           <Nav className="NavBarLarge" >

@@ -1,9 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+.SellingPoint {
+  font-family: "Montserrat", sans-serif;
+  color: #9e3846;
+}
+
+.SellingPointDescription {
+  font-family: "Oswald", sans-serif;
+  color: #575757;
+}
+
+.ContactUsTitleText {
+  font-family: "Montserrat", sans-serif;
+  color: #9e3846;
+}
+
+.Course {
+  font-family: "Montserrat", sans-serif;
+  color: #9e3846;
+}
+
+.TuitionName {
+  font-family: "Montserrat", sans-serif;
+  color: #9e3846;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
+}
+
+.BackgroundImage {
+  height: 50vh;
+  width: 100vw;
 }
 
 .App-header {
@@ -33,6 +66,17 @@
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+}
+
+.BookingButton {
+  box-shadow: 10px 10px 10px #c6c3e8;
+  background-color: #90ee90;
+}
+
+.BookingButton:hover {
+  opacity: 0.85;
+  box-shadow: none;
+  background-color: #4ee44e;
 }
 
 .App-header {
@@ -66,10 +110,6 @@
 }
 
 .NavBarLarge {
-  display: none !important;
-}
-
-.BackgroundImage {
   display: none !important;
 }
 
@@ -112,16 +152,64 @@
 
 .CourseContainer:hover {
   box-shadow: none !important;
+  opacity: 1;
 }
 
 .CourseContainer {
   cursor: pointer;
+  opacity: 0.6;
+}
+
+.Cancel {
+  cursor: pointer;
+}
+
+.Subjects {
+  font-family: "Oswald", sans-serif;
 }
 
 .Subjects:hover {
   background-color: #c6c3e8;
 }
 
+.BookingLink:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.BookingLink {
+  color: #9e3846;
+  font-family: "Montserrat", sans-serif;
+}
+
 .Navbar {
   z-index: 9999 !important;
+}
+
+.ButtonText {
+  font-family: "Montserrat", sans-serif;
+  color: #9e3846;
+}
+
+.ContactTitle {
+  font-family: "Montserrat", sans-serif;
+  color: #9e3846;
+}
+
+.Description {
+  font-family: "Oswald", sans-serif;
+  color: #575757;
+}
+
+.SubmitButton {
+  font-family: "Montserrat", sans-serif;
+  color: #9e3846;
+  box-shadow: 10px 10px 10px #c6c3e8;
+  background-color: #90ee90;
+}
+
+.SubmitButton:hover {
+  opacity: 0.85;
+  box-shadow: none;
+  background-color: #4ee44e;
 }
