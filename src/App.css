@@ -117,6 +117,10 @@
   display: block !important;
 }
 
+.SellingPointsContainer {
+  flex-direction: column;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -126,7 +130,7 @@
   }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 780px) {
   .NavBarLarge {
     display: flex !important;
     margin-top: auto;
@@ -147,6 +151,11 @@
 
   .TextContainer2 {
     display: none !important;
+  }
+
+  .SellingPointsContainer {
+    flex-direction: row;
+    padding: 5;
   }
 }
 

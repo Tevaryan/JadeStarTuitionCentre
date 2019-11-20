@@ -630,7 +630,7 @@ class Homepage extends Component {
 
           <div className="CalculatorContainer d-flex justify-content-center p-4" style={{width:'100%'}}>
             <div className="p-4" style={{backgroundColor:'#e7e6f5', height:'100%', boxShadow: '10px 10px 10px #c6c3e8', borderRadius:'10px'}}>
-              <h6 className="Course">Choosen Subjects</h6>
+              <h6 className="Course px-4">Choosen Subjects</h6>
               {
                 this.state.chosen.map( subjects =>
                   <div className="d-flex">
@@ -638,7 +638,7 @@ class Homepage extends Component {
                       <text className="Cancel"  style={{color:'red'}}>&#10005;</text>
                     </div>
                     <div className="d-flex ml-2 w-50 justify-content-start">
-                      {subjects.subject} ({subjects.course})
+                      {subjects.subject}({subjects.course})
                     </div>
                   </div>
                 )

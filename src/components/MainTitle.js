@@ -21,8 +21,8 @@ export default class Navbar extends Component {
             </div>
           </div>
         </div>
-        <div className='d-flex flex-row align-items-center p-5' style={{width:'100vw', height:'auto', backgroundColor:''}}>
-          <div className="d-flex  align-items-center flex-column px-5" style={{width:'50%', height:'100%'}} >
+        <div className='d-flex SellingPointsContainer align-items-center ' style={{width:'100vw', height:'auto', backgroundColor:''}}>
+          <div className="d-flex  align-items-center SellingPointContainer flex-column p-5" style={{width:'100%', height:'100%'}} >
             <div className="mb-2 mt-0" >
               <h4 className="SellingPoint" style={{borderBottom: "3px solid  #9e3846"}} >One on One Tutorials</h4>
             </div>
@@ -30,7 +30,7 @@ export default class Navbar extends Component {
               High quality and personalised interaction with our tutors ensure your children gets the maximum amount of attention and care they need to excel.
             </div>
           </div>
-          <div className="d-flex align-items-center flex-column px-5" style={{width:'50%', height:'100%'}}>
+          <div className="d-flex align-items-center SellingPointContainer flex-column p-5" style={{width:'100%', height:'100%'}}>
             <div className="mb-2 mt-0" >
               <h4 className="SellingPoint" style={{borderBottom: "3px solid  #9e3846"}}>Group Tutorials</h4>
             </div>
