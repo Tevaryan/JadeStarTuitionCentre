@@ -11,8 +11,7 @@ class SubmitChosenSubjectModal extends Component {
         recipient :'tevaryan1993@gmail.com',
         sender: '',
         subject: 'Hi there, I would like to book these subjects',
-        text: 'blabla',
-        chosen:[]
+        text: 'I have booked nothing',
       }
     };
   }
@@ -26,7 +25,6 @@ class SubmitChosenSubjectModal extends Component {
 
   render() {
     const email = this.state.email;
-    const chosen = this.state.chosen
     return (
       <div style={{backgroundColor: '#e7e6f5', backgroundRepeat:'repeat-y', height:'100%'}}>
         <div className="d-flex justify-content-center mt-5">
