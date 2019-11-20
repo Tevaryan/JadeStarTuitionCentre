@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from '../containers/Navbar.js';
 import MainTitle from '../components/MainTitle.js'
+import { Modal } from 'reactstrap';
+import SubmitChosenSubjectsModal from "../containers/SubmitChosenSubjectsModal.js"
 import '../App.css';
 import circles from "../assets/background-cricle.png"
 import poster from "../assets/campPic.jpg"
@@ -371,9 +373,15 @@ class Homepage extends Component {
         }
       ],
       chosen:[],
-      random:''
+      ModalOpen: false
 
     };
+  }
+
+  clickModalOpen = () => {
+    this.setState({
+      ModalOpen: !this.state.ModalOpen
+    })
   }
 
   addSubject(subject) {
@@ -644,7 +652,7 @@ class Homepage extends Component {
                 )
               }
               <div className="d-flex justify-content-center pt-3">
-                <button className="p-2 SubmitButton" style={{borderRadius:'10px'}} >
+                <button className="p-2 SubmitButton" style={{borderRadius:'10px'}} onClick={this.clickModalOpen} >
                   Submit
                 </button>
               </div>
@@ -767,6 +775,9 @@ class Homepage extends Component {
             </button>
           </div>
         </div>
+        <Modal isOpen={this.state.ModalOpen}>
+            <SubmitChosenSubjectsModal toggle={this.clickModalOpen} chosenSubjects={this.state.chosen}/>
+        </Modal>
       </div>
     )
   }

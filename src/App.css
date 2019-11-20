@@ -222,3 +222,16 @@
   box-shadow: none;
   background-color: #4ee44e;
 }
+
+.ModalCloseButton {
+  font-family: "Montserrat", sans-serif;
+  color: red;
+  box-shadow: 10px 10px 10px #c6c3e8;
+  background-color: red;
+}
+
+.ModalCloseButton:hover {
+  opacity: 0.85;
+  box-shadow: none;
+  background-color: red;
+}
