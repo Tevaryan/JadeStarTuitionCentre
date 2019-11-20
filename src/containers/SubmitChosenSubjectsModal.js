@@ -11,7 +11,7 @@ class SubmitChosenSubjectModal extends Component {
         recipient :'tevaryan1993@gmail.com',
         sender: '',
         subject: 'Hi there, I would like to book these subjects',
-        text: this.props.chosenSubjects,
+        text: 'blabla',
         chosen:[]
       }
     };
