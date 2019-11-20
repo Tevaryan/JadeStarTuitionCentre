@@ -382,20 +382,81 @@ class Homepage extends Component {
 
 
     if (subject.clicked === false) {
-      this.setState(prevState => ({
-        SPM: prevState.SPM.map(course =>
+      if (subject.course === "SPM"){
+        this.setState(prevState => ({
+          SPM: prevState.SPM.map(course =>
+            course.subject === subject.subject ?
+            {...course,
+              clicked: true,
+              color:'#d5d3eb'
+            }: course)
+        }))
+      }
+      if (subject.course === "IGCSE"){
+        this.setState(prevState => ({
+          IGCSE: prevState.IGCSE.map(course =>
+            course.subject === subject.subject ?
+            {...course,
+              clicked: true,
+              color:'#d5d3eb'
+            }: course)
+        }))
+      }
+
+      if (subject.course === "STPM"){
+        this.setState(prevState => ({
+          STPM: prevState.STPM.map(course =>
+            course.subject === subject.subject ?
+            {...course,
+              clicked: true,
+              color:'#d5d3eb'
+            }: course)
+        }))
+      }
+
+      if (subject.course === "IBDIPLOMA"){
+        this.setState(prevState => ({
+          IBDIPLOMA: prevState.IBDIPLOMA.map(course =>
+            course.subject === subject.subject ?
+            {...course,
+              clicked: true,
+              color:'#d5d3eb'
+            }: course)
+        }))
+      }
+
+      if (subject.course === "IBMYP"){
+        this.setState(prevState => ({
+          IBMYP: prevState.IBMYP.map(course =>
           course.subject === subject.subject ?
-          {...course,
-            clicked: true,
-            color:'#d5d3eb'
-          }: course),
-        IGCSE: prevState.IGCSE.map(course =>
+              {...course,
+                clicked: true,
+                color:'#d5d3eb'
+              }: course)
+        }))
+      }
+
+      if (subject.course === "PT3") {
+        this.setState(prevState => ({
+          PT3: prevState.PT3.map(course =>
           course.subject === subject.subject ?
           {...course,
             clicked: true,
             color:'#d5d3eb'
           }: course)
-      }))
+        }))
+      }
+
+      if (subject.course === "UPSR") {
+        this.setState(prevState => ({
+          PT3: prevState.PT3.map(course =>
+          course.subject === subject.subject ?
+          {...course,
+            clicked: true,
+            color:'#d5d3eb'
+          }: course)
+        }))
+      }
       console.log('added')
       chosenSubject.push(subject)
       this.setState({
@@ -417,24 +478,54 @@ class Homepage extends Component {
             {...course,
               clicked: false,
               color:' '
-            }: course)
+            }: course),
+            STPM: prevState.STPM.map(course =>
+              course.subject === subject.subject ?
+              {...course,
+                clicked: false,
+                color:''
+              }: course),
+            IBDIPLOMA: prevState.IBDIPLOMA.map(course =>
+                course.subject === subject.subject ?
+                {...course,
+                  clicked: false,
+                  color:''
+                }: course),
+            IBMYP: prevState.IBMYP.map(course =>
+              course.subject === subject.subject ?
+                  {...course,
+                    clicked: false,
+                    color:''
+                  }: course),
+            PT3: prevState.PT3.map(course =>
+                    course.subject === subject.subject ?
+                    {...course,
+                      clicked: false,
+                      color:''
+                    }: course),
+            UPSR: prevState.UPSR.map(course =>
+                      course.subject === subject.subject ?
+                      {...course,
+                        clicked: false,
+                        color:''
+                      }: course)
       }))
 
       console.log('removed')
+      console.log(subject, 'removed subject')
       var array = this.state.chosen
+      console.log(array)
       var index = array.indexOf(subject)
       console.log(index)
-      if (index !== -1) {
         array.splice(index, 1);
         this.setState({chosen: array});
-      }
-      console.log(subject, 'removed subject')
       console.log(this.state.chosen, 'removing chosen subjects')
     }
   }
 
   removeSubject(subject) {
 
+    console.log(subject, "subject cancelled from list of chosen subjects")
     var array = this.state.chosen
     var index = array.indexOf(subject)
     console.log(index)
@@ -443,20 +534,84 @@ class Homepage extends Component {
       this.setState({chosen: array});
     }
 
-    this.setState(prevState => ({
-      SPM: prevState.SPM.map(course =>
-        course === subject ?
-        {...course,
-          clicked: false,
-          color:' '
-        }: course),
-      IGCSE: prevState.IGCSE.map(course =>
-          course === subject ?
+    if (subject.course === "SPM"){
+      this.setState(prevState => ({
+        SPM: prevState.SPM.map(course =>
+          course.subject === subject.subject ?
           {...course,
             clicked: false,
-            color:' '
+            color:''
           }: course)
-    }))
+      }))
+    }
+
+    if (subject.course === "IGCSE"){
+      this.setState(prevState => ({
+        IGCSE: prevState.IGCSE.map(course =>
+          course.subject === subject.subject ?
+          {...course,
+            clicked: false,
+            color:''
+          }: course)
+      }))
+    }
+
+    if (subject.course === "STPM"){
+      this.setState(prevState => ({
+        STPM: prevState.STPM.map(course =>
+          course.subject === subject.subject ?
+          {...course,
+            clicked: false,
+            color:''
+          }: course)
+      }))
+    }
+
+    if (subject.course === "IBDIPLOMA"){
+      this.setState(prevState => ({
+        IBDIPLOMA: prevState.IBDIPLOMA.map(course =>
+          course.subject === subject.subject ?
+          {...course,
+            clicked: false,
+            color:''
+          }: course)
+      }))
+    }
+
+    if (subject.course === "IBMYP"){
+      this.setState(prevState => ({
+        IBMYP: prevState.IBMYP.map(course =>
+        course.subject === subject.subject ?
+            {...course,
+              clicked: false,
+              color:''
+            }: course)
+      }))
+    }
+
+    if (subject.course === "PT3") {
+      this.setState(prevState => ({
+        PT3: prevState.PT3.map(course =>
+        course.subject === subject.subject ?
+        {...course,
+          clicked: false,
+          color:''
+        }: course)
+      }))
+    }
+
+    if (subject.course === "UPSR") {
+      this.setState(prevState => ({
+        PT3: prevState.PT3.map(course =>
+        course.subject === subject.subject ?
+        {...course,
+          clicked: false,
+          color:''
+        }: course)
+      }))
+    }
+
+
 
     console.log(subject, 'subject removed')
     console.log(this.state.chosen, 'chosen subjects')
@@ -483,7 +638,7 @@ class Homepage extends Component {
                       <text className="Cancel"  style={{color:'red'}}>&#10005;</text>
                     </div>
                     <div className="d-flex ml-2 w-50 justify-content-start">
-                      {subjects.subject}
+                      {subjects.subject} ({subjects.course})
                     </div>
                   </div>
                 )
